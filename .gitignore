@@ -1,0 +1,10 @@
+videos/
+Video_GradCam/
+video_clips/
+diagnostic_save_path/
+diagnostics_TEST
+diagnostics_TRAIN
+diagnostics_TRAIN_Cropped
+checkpoints/TensorBoard
+checkpoints/train_all
+*.pth
