@@ -2,9 +2,12 @@ videos/
 Video_GradCam/
 video_clips/
 diagnostic_save_path/
+4fold_diagnostics_img/
+4fold_diagnostics_text/
 diagnostics_TEST
 diagnostics_TRAIN
 diagnostics_TRAIN_Cropped
 checkpoints/TensorBoard
 checkpoints/train_all
+work_dirs/
 *.pth
