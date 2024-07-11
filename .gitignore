@@ -15,10 +15,11 @@ diagnostics_TRAIN_Cropped
 4fold_results_img/
 4fold_results_text/
 
-# Ignore .pth files and logs
+# Ignore .pth files, congigs, and logs
 checkpoints/TensorBoard
 checkpoints/train_all
 work_dirs/
+test_output_dir/
 4fold_results_cropped/
 *.pth
 *.zip
