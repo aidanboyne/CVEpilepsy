@@ -1,0 +1,423 @@
+Patient 1 (06348578):
+Total Frames: 73579
+Seizure Frames: 5364.63
+Non-Seizure Frames: 68214.37000000001
+Videos:
+  Video Path: videos/7942GT00.mp4
+  Total Frames: 20176
+FPS: 29.97
+  Seizure Frames: 1768.23
+  Non-Seizure Frames: 18407.77
+  Video Path: videos/7942GU00.mp4
+  Total Frames: 20042
+FPS: 29.97
+  Seizure Frames: 1858.1399999999999
+  Non-Seizure Frames: 18183.86
+  Video Path: videos/7942GZ00.mp4
+  Total Frames: 33361
+FPS: 29.97
+  Seizure Frames: 1738.26
+  Non-Seizure Frames: 31622.74
+
+
+Patient 2 (05501184):
+Total Frames: 37890
+Seizure Frames: 2340.0
+Non-Seizure Frames: 35550.0
+Videos:
+  Video Path: videos/7913ZY00.mp4
+  Total Frames: 37890
+FPS: 30.0
+  Seizure Frames: 2340.0
+  Non-Seizure Frames: 35550.0
+
+
+Patient 3 (05418761):
+Total Frames: 23878
+Seizure Frames: 2817.18
+Non-Seizure Frames: 21060.82
+Videos:
+  Video Path: videos/7972M300.mp4
+  Total Frames: 23878
+FPS: 29.97
+  Seizure Frames: 2817.18
+  Non-Seizure Frames: 21060.82
+
+
+Patient 4 (06394294):
+Total Frames: 87385
+Seizure Frames: 7162.83
+Non-Seizure Frames: 80222.17
+Videos:
+  Video Path: videos/7942QQ00.mp4
+  Total Frames: 26844
+FPS: 29.97
+  Seizure Frames: 2097.9
+  Non-Seizure Frames: 24746.1
+  Video Path: videos/7942QR00.mp4
+  Total Frames: 40261
+FPS: 29.97
+  Seizure Frames: 2397.6
+  Non-Seizure Frames: 37863.4
+  Video Path: videos/00200200.mp4
+  Total Frames: 20280
+FPS: 29.97
+  Seizure Frames: 2667.33
+  Non-Seizure Frames: 17612.67
+
+
+Patient 5 (05467817):
+Total Frames: 20016
+Seizure Frames: 2367.63
+Non-Seizure Frames: 17648.37
+Videos:
+  Video Path: videos/7971Q500.mp4
+  Total Frames: 20016
+FPS: 29.97
+  Seizure Frames: 2367.63
+  Non-Seizure Frames: 17648.37
+
+
+Patient 6 (05323733):
+Total Frames: 49508
+Seizure Frames: 1708.29
+Non-Seizure Frames: 47799.71
+Videos:
+  Video Path: videos/7971UI00.mp4
+  Total Frames: 49508
+FPS: 29.97
+  Seizure Frames: 1708.29
+  Non-Seizure Frames: 47799.71
+
+
+Patient 7 (05486196):
+Total Frames: 34214
+Seizure Frames: 2337.66
+Non-Seizure Frames: 31876.34
+Videos:
+  Video Path: videos/7941M700.mp4
+  Total Frames: 34214
+FPS: 29.97
+  Seizure Frames: 2337.66
+  Non-Seizure Frames: 31876.34
+
+
+Patient 8 (05514820):
+Total Frames: 26089
+Seizure Frames: 1498.5
+Non-Seizure Frames: 24590.5
+Videos:
+  Video Path: videos/7941LY00.mp4
+  Total Frames: 26089
+FPS: 29.97
+  Seizure Frames: 1498.5
+  Non-Seizure Frames: 24590.5
+
+
+Patient 9 (05513119):
+Total Frames: 11135
+Seizure Frames: 2427.5699999999997
+Non-Seizure Frames: 8707.43
+Videos:
+  Video Path: videos/00200100.mp4
+  Total Frames: 11135
+FPS: 29.97
+  Seizure Frames: 2427.5699999999997
+  Non-Seizure Frames: 8707.43
+
+
+Patient 10 (02267738):
+Total Frames: 10949
+Seizure Frames: 2247.75
+Non-Seizure Frames: 8701.25
+Videos:
+  Video Path: videos/7941EC00.mp4
+  Total Frames: 10949
+FPS: 29.97
+  Seizure Frames: 2247.75
+  Non-Seizure Frames: 8701.25
+
+
+Patient 11 (05447543):
+Total Frames: 64441
+Seizure Frames: 6773.219999999999
+Non-Seizure Frames: 57667.78
+Videos:
+  Video Path: videos/7941D100.mp4
+  Total Frames: 9635
+FPS: 29.97
+  Seizure Frames: 1018.98
+  Non-Seizure Frames: 8616.02
+  Video Path: videos/7941D200.mp4
+  Total Frames: 13231
+FPS: 29.97
+  Seizure Frames: 1318.6799999999998
+  Non-Seizure Frames: 11912.32
+  Video Path: videos/7941D300.mp4
+  Total Frames: 9107
+FPS: 29.97
+  Seizure Frames: 929.0699999999999
+  Non-Seizure Frames: 8177.93
+  Video Path: videos/7941D400.mp4
+  Total Frames: 10396
+FPS: 29.97
+  Seizure Frames: 1168.83
+  Non-Seizure Frames: 9227.17
+  Video Path: videos/7941D500.mp4
+  Total Frames: 13227
+FPS: 29.97
+  Seizure Frames: 1138.86
+  Non-Seizure Frames: 12088.14
+  Video Path: videos/7941D600.mp4
+  Total Frames: 8845
+FPS: 29.97
+  Seizure Frames: 1198.8
+  Non-Seizure Frames: 7646.2
+
+
+Patient 12 (02268547):
+Total Frames: 12956
+Seizure Frames: 1858.1399999999999
+Non-Seizure Frames: 11097.86
+Videos:
+  Video Path: videos/7940K700.mp4
+  Total Frames: 12956
+FPS: 29.97
+  Seizure Frames: 1858.1399999999999
+  Non-Seizure Frames: 11097.86
+
+
+Patient 13 (05454991):
+Total Frames: 30740
+Seizure Frames: 1948.05
+Non-Seizure Frames: 28791.95
+Videos:
+  Video Path: videos/79410R00.mp4
+  Total Frames: 30740
+FPS: 29.97
+  Seizure Frames: 1948.05
+  Non-Seizure Frames: 28791.95
+
+
+Patient 14 (05497695):
+Total Frames: 100449
+Seizure Frames: 8301.69
+Non-Seizure Frames: 92147.31
+Videos:
+  Video Path: videos/7941E901.mp4
+  Total Frames: 30821
+FPS: 29.97
+  Seizure Frames: 1978.02
+  Non-Seizure Frames: 28842.98
+  Video Path: videos/7941EA00.mp4
+  Total Frames: 22955
+FPS: 29.97
+  Seizure Frames: 2247.75
+  Non-Seizure Frames: 20707.25
+  Video Path: videos/7971C500.mp4
+  Total Frames: 12651
+FPS: 29.97
+  Seizure Frames: 2067.93
+  Non-Seizure Frames: 10583.07
+  Video Path: videos/7971C700.mp4
+  Total Frames: 34022
+FPS: 29.97
+  Seizure Frames: 2007.99
+  Non-Seizure Frames: 32014.01
+
+
+Patient 15 (05463487):
+Total Frames: 57115
+Seizure Frames: 2247.75
+Non-Seizure Frames: 54867.25
+Videos:
+  Video Path: videos/79519000.mp4
+  Total Frames: 57115
+FPS: 29.97
+  Seizure Frames: 2247.75
+  Non-Seizure Frames: 54867.25
+
+
+Patient 16 (05235825):
+Total Frames: 33162
+Seizure Frames: 1948.05
+Non-Seizure Frames: 31213.95
+Videos:
+  Video Path: videos/79719R00.mp4
+  Total Frames: 33162
+FPS: 29.97
+  Seizure Frames: 1948.05
+  Non-Seizure Frames: 31213.95
+
+
+Patient 17 (05352576):
+Total Frames: 119151
+Seizure Frames: 12647.339999999998
+Non-Seizure Frames: 106503.66
+Videos:
+  Video Path: videos/7970IA00.mp4
+  Total Frames: 14588
+FPS: 29.97
+  Seizure Frames: 2397.6
+  Non-Seizure Frames: 12190.4
+  Video Path: videos/7940HO00.mp4
+  Total Frames: 24467
+FPS: 29.97
+  Seizure Frames: 2037.96
+  Non-Seizure Frames: 22429.04
+  Video Path: videos/7940HU00.mp4
+  Total Frames: 56632
+FPS: 29.97
+  Seizure Frames: 2517.48
+  Non-Seizure Frames: 54114.52
+  Video Path: videos/22200Q01.mp4
+  Total Frames: 6792
+FPS: 29.97
+  Seizure Frames: 2067.93
+  Non-Seizure Frames: 4724.07
+  Video Path: videos/22200S00.mp4
+  Total Frames: 10942
+FPS: 29.97
+  Seizure Frames: 2187.81
+  Non-Seizure Frames: 8754.19
+  Video Path: videos/22200T00.mp4
+  Total Frames: 5730
+FPS: 29.97
+  Seizure Frames: 1438.56
+  Non-Seizure Frames: 4291.4400000000005
+
+
+Patient 18 (05512494):
+Total Frames: 27484
+Seizure Frames: 1288.71
+Non-Seizure Frames: 26195.29
+Videos:
+  Video Path: videos/7971H000.mp4
+  Total Frames: 27484
+FPS: 29.97
+  Seizure Frames: 1288.71
+  Non-Seizure Frames: 26195.29
+
+
+Patient 19 (05489744):
+Total Frames: 77676
+Seizure Frames: 6683.3099999999995
+Non-Seizure Frames: 70992.69
+Videos:
+  Video Path: videos/7941CO00.mp4
+  Total Frames: 36132
+FPS: 29.97
+  Seizure Frames: 2937.06
+  Non-Seizure Frames: 33194.94
+  Video Path: videos/7951EX00.mp4
+  Total Frames: 41544
+FPS: 29.97
+  Seizure Frames: 3746.25
+  Non-Seizure Frames: 37797.75
+
+
+Patient 20 (06381028):
+Total Frames: 38693
+Seizure Frames: 3300.0
+Non-Seizure Frames: 35393.0
+Videos:
+  Video Path: videos/7953A100.mp4
+  Total Frames: 17787
+FPS: 30.0
+  Seizure Frames: 1980.0
+  Non-Seizure Frames: 15807.0
+  Video Path: videos/7953A400.mp4
+  Total Frames: 20906
+FPS: 30.0
+  Seizure Frames: 1320.0
+  Non-Seizure Frames: 19586.0
+
+
+Patient 21 (00582992):
+Total Frames: 48605
+Seizure Frames: 5934.0599999999995
+Non-Seizure Frames: 42670.94
+Videos:
+  Video Path: videos/7952GP00.mp4
+  Total Frames: 48605
+FPS: 29.97
+  Seizure Frames: 5934.0599999999995
+  Non-Seizure Frames: 42670.94
+
+
+Patient 22 (06338772):
+Total Frames: 30673
+Seizure Frames: 1950.0
+Non-Seizure Frames: 28723.0
+Videos:
+  Video Path: videos/7972OT00.mp4
+  Total Frames: 30673
+FPS: 30.0
+  Seizure Frames: 1950.0
+  Non-Seizure Frames: 28723.0
+
+
+Patient 23 (05109836):
+Total Frames: 94178
+Seizure Frames: 7230.0
+Non-Seizure Frames: 86948.0
+Videos:
+  Video Path: videos/7952DG00.mp4
+  Total Frames: 29547
+FPS: 30.0
+  Seizure Frames: 2100.0
+  Non-Seizure Frames: 27447.0
+  Video Path: videos/7952DP00.mp4
+  Total Frames: 20329
+FPS: 30.0
+  Seizure Frames: 1830.0
+  Non-Seizure Frames: 18499.0
+  Video Path: videos/00108500.mp4
+  Total Frames: 26372
+FPS: 30.0
+  Seizure Frames: 1440.0
+  Non-Seizure Frames: 24932.0
+  Video Path: videos/00108700.mp4
+  Total Frames: 17930
+FPS: 30.0
+  Seizure Frames: 1860.0
+  Non-Seizure Frames: 16070.0
+
+
+Patient 24 (06452950):
+Total Frames: 32752
+Seizure Frames: 1828.1699999999998
+Non-Seizure Frames: 30923.83
+Videos:
+  Video Path: videos/7964JU00.mp4
+  Total Frames: 32752
+FPS: 29.97
+  Seizure Frames: 1828.1699999999998
+  Non-Seizure Frames: 30923.83
+
+
+Patient 25 (00913367):
+Total Frames: 52758
+Seizure Frames: 4495.5
+Non-Seizure Frames: 48262.5
+Videos:
+  Video Path: videos/00105B00.mp4
+  Total Frames: 20352
+FPS: 29.97
+  Seizure Frames: 1228.77
+  Non-Seizure Frames: 19123.23
+  Video Path: videos/00105C00.mp4
+  Total Frames: 15509
+FPS: 29.97
+  Seizure Frames: 1708.29
+  Non-Seizure Frames: 13800.71
+  Video Path: videos/7962TA00.mp4
+  Total Frames: 16897
+FPS: 29.97
+  Seizure Frames: 1558.44
+  Non-Seizure Frames: 15338.56
+
+
+Total Frames: 1195476
+Seizure Frames:98706	8.26%
+Non-seizure Frames:1096770	91.74%

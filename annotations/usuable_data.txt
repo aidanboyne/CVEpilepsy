@@ -1,101 +1,99 @@
 Patient 1 (06348578):
-('Videos/7942GT00.mp4', 306, 365, '7942GT00', sec) # significant movement 
-('Videos/7942GU00.mp4', 300, 362, '7942GU00', sec) # significant movement
-('Videos/7942GZ00.mp4', 748, 806, '7942GZ00', sec) # significant movement
+('videos/7942GT00.mp4', 306, 365, '7942GT00', sec) # significant movement 
+('videos/7942GU00.mp4', 300, 362, '7942GU00', sec) # significant movement
+('videos/7942GZ00.mp4', 748, 806, '7942GZ00', sec) # significant movement
 
 Patient 2 (05501184):
-('Videos/7913ZY00.mp4', 540, 618, '7913ZY00', sec) # Moderate Movement, head and arm shaking
+('videos/7913ZY00.mp4', 540, 618, '7913ZY00', sec) # Moderate Movement, head and arm shaking
 
 Patient 3 (05418761):
-('Videos/7972M300.mp4', 326, 420, '7972M300', sec) # Moderate movement, shaking 
+('videos/7972M300.mp4', 326, 420, '7972M300', sec) # Moderate movement, shaking 
 
 
 Patient 4 (06394294):
-('Videos/7942QQ00.mp4', 350, 420, '7942QQ00', sec) # significant movement
-('Videos/7942QR00.mp4', 365, 445, '7942QR00', sec) # significant movement
-('Videos/00200200.mp4', 144, 233, '00200200', sec) # moderate movement
+('videos/7942QQ00.mp4', 350, 420, '7942QQ00', sec) # significant movement
+('videos/7942QR00.mp4', 365, 445, '7942QR00', sec) # significant movement
+('videos/00200200.mp4', 144, 233, '00200200', sec) # moderate movement
 
 Patient 5 (05467817):
-('Videos/7971Q500.mp4', 292, 371, '7971Q500', sec) # significant movement
+('videos/7971Q500.mp4', 292, 371, '7971Q500', sec) # significant movement
 
 Patient 6 (05323733):
-('Videos/7971UI00.mp4', 663, 720, '7971UI00', sec) # moderate movement 
+('videos/7971UI00.mp4', 663, 720, '7971UI00', sec) # moderate movement 
 
 Patient 7 (05486196):
-('Videos/7941M700.mp4', 177, 255, '7941M700', sec) # moderate-significant movement
+('videos/7941M700.mp4', 177, 255, '7941M700', sec) # moderate-significant movement
 
 Patient 8 (05514820):
-('Videos/7941LY00.mp4', 314, 364, '7941LY00', sec) # slight-moderate movement 
+('videos/7941LY00.mp4', 314, 364, '7941LY00', sec) # slight-moderate movement 
 
 Patient 9 (05513119):
-('Videos/00200100.mp4', 154, 235, '00200100', sec) # slight-moderate movement 
+('videos/00200100.mp4', 154, 235, '00200100', sec) # slight-moderate movement 
 
 Patient 10 (02267738):
-('Videos/7941EC00.mp4', 175, 250, '7941EC00', sec) # moderate movement
+('videos/7941EC00.mp4', 175, 250, '7941EC00', sec) # moderate movement
 
 Patient 11 (05447543):
-('Videos/7941D100.mp4', 136, 170, '7941D100', sec) # significant movement 
-('Videos/7941D200.mp4', 177, 221, '7941D200', sec) # significant movement 
-('Videos/7941D300.mp4', 190, 221, '7941D300', sec) # significant movement
-('Videos/7941D400.mp4', 168, 207, '7941D400', sec) # moderate movement 
-('Videos/7941D500.mp4', 209, 247, '7941D500', sec) # slight-moderate movement
-('Videos/7941D600.mp4', 145, 185, '7941D600', sec) # slight-moderate movement
+('videos/7941D100.mp4', 136, 170, '7941D100', sec) # significant movement 
+('videos/7941D200.mp4', 177, 221, '7941D200', sec) # significant movement 
+('videos/7941D300.mp4', 190, 221, '7941D300', sec) # significant movement
+('videos/7941D400.mp4', 168, 207, '7941D400', sec) # moderate movement 
+('videos/7941D500.mp4', 209, 247, '7941D500', sec) # slight-moderate movement
+('videos/7941D600.mp4', 145, 185, '7941D600', sec) # slight-moderate movement
 
 Patient 12 (02268547):
-('Videos/7940K700.mp4', 130, 192, '7940K700', sec) # significant movement
+('videos/7940K700.mp4', 130, 192, '7940K700', sec) # significant movement
 
 Patient 13 (05454991):
-('Videos/79410R00.mp4', 360, 425, '79410R00', sec) # moderate-significant movement
+('videos/79410R00.mp4', 360, 425, '79410R00', sec) # moderate-significant movement
 
 Patient 14 (05497695):
-('Videos/7941E901.mp4', 325, 391, '7941E901', sec) # significant movement
-('Videos/7941EA00.mp4', 330, 405, '7941EA00', sec) # significant movement
-('Videos/7971C500.mp4', 183, 252, '7971C500', sec) # moderate-significant movement
-('Videos/7971C700.mp4', 127, 194, '7971C700', sec) # moderat-significant movement
+('videos/7941E901.mp4', 325, 391, '7941E901', sec) # significant movement
+('videos/7941EA00.mp4', 330, 405, '7941EA00', sec) # significant movement
+('videos/7971C500.mp4', 183, 252, '7971C500', sec) # moderate-significant movement
+('videos/7971C700.mp4', 127, 194, '7971C700', sec) # moderat-significant movement
 
 Patient 15 (05463487):
-('Videos/79519000.mp4', 625, 700, '79519000', sec) # moderate movement
+('videos/79519000.mp4', 625, 700, '79519000', sec) # moderate movement
 
 Patient 16 (05235825):
-('Videos/79719R00.mp4', 65, 130, '79719R00', sec) # moderate movement
+('videos/79719R00.mp4', 65, 130, '79719R00', sec) # moderate movement
 
 Patient 17 (05352576):
-('Videos/7970IA00.mp4', 170, 250, '7970IA00', sec) # significant movement
-('Videos/7940HO00.mp4', 252, 320, '7940HO00', sec) # moderate-significant movement
-('Videos/7940HU00.mp4', 130, 214, '7940HU00', sec) # significant movement
-('Videos/22200Q01.mp4', 62, 131, '22200Q01', sec) # significant movement
-('Videos/22200S00.mp4', 82, 155, '22200S00', sec) # moderate movement
-('Videos/22200T00.mp4', 72, 120, '22200T00', sec) # slight-moderate movement
+('videos/7970IA00.mp4', 170, 250, '7970IA00', sec) # significant movement
+('videos/7940HO00.mp4', 252, 320, '7940HO00', sec) # moderate-significant movement
+('videos/7940HU00.mp4', 130, 214, '7940HU00', sec) # significant movement
+('videos/22200Q01.mp4', 62, 131, '22200Q01', sec) # significant movement
+('videos/22200S00.mp4', 82, 155, '22200S00', sec) # moderate movement
+('videos/22200T00.mp4', 72, 120, '22200T00', sec) # slight-moderate movement
 
 Patient 18 (05512494):
-('Videos/7971H000.mp4', 97, 140, '7971H000', sec) # Moderate movement
+('videos/7971H000.mp4', 97, 140, '7971H000', sec) # Moderate movement
 
 Patient 19 (05489744):
-('Videos/7941CO00.mp4', 372, 470, '7941CO00', sec) # Moderate-Significant movement
-('Videos/7951EX00.mp4', 170, 295, '7951EX00', sec) # Moderate-Significant movement
+('videos/7941CO00.mp4', 372, 470, '7941CO00', sec) # Moderate-Significant movement
+('videos/7951EX00.mp4', 170, 295, '7951EX00', sec) # Moderate-Significant movement
 
 Patient 20 (06381028):
-('Videos/7953A100.mp4', 309, 375, '7953A100', sec) # Slight-Moderate movement
-('Videos/7953A400.mp4', 252, 296, '7953A400', sec) # Slight-Moderate movement
+('videos/7953A100.mp4', 309, 375, '7953A100', sec) # Slight-Moderate movement
+('videos/7953A400.mp4', 252, 296, '7953A400', sec) # Slight-Moderate movement
 
 Patient 21 (00582992):
-('Videos/7952GP00.mp4', 1110, 1308, '77952GP00', sec) # Moderate movement
+('videos/7952GP00.mp4', 1110, 1308, '77952GP00', sec) # Moderate movement
 
 Patient 22 (06338772):
-('Videos/7972OT00.mp4', 405, 470, '7972OT00', sec) # Moderate-Significant movement
+('videos/7972OT00.mp4', 405, 470, '7972OT00', sec) # Moderate-Significant movement
 
 Patient 23 (05109836):
-('Videos/7952DG00.mp4', 315, 385, '7952DG00', sec) # Moderate movement
-('Videos/7952DP00.mp4', 315, 376, '7952DP00', sec) # Moderate movement
-('Videos/00108500.mp4', 492, 540, '00108500', sec) # Slight-moderate movement
-('Videos/00108700.mp4', 233, 295, '00108700', sec) # Moderate movement
+('videos/7952DG00.mp4', 315, 385, '7952DG00', sec) # Moderate movement
+('videos/7952DP00.mp4', 315, 376, '7952DP00', sec) # Moderate movement
+('videos/00108500.mp4', 492, 540, '00108500', sec) # Slight-moderate movement
+('videos/00108700.mp4', 233, 295, '00108700', sec) # Moderate movement
 
 Patient 24 (06452950):
-('Videos/7964JU00.mp4', 427, 488, '7964JU00', sec) # Moderate-Significant movement
+('videos/7964JU00.mp4', 427, 488, '7964JU00', sec) # Moderate-Significant movement
 
 Patient 25 (00913367):
-('Videos/00105B00.mp4', 110, 151, '00105B00', sec) # Moderate-Significant movement
-('Videos/00105C00.mp4', 135, 192, '00105C00', sec) # Moderate movement
-('Videos/7962TA00.mp4', 146, 198, '7962TA00', sec) # Moderate movement
-
-49
+('videos/00105B00.mp4', 110, 151, '00105B00', sec) # Moderate-Significant movement
+('videos/00105C00.mp4', 135, 192, '00105C00', sec) # Moderate movement
+('videos/7962TA00.mp4', 146, 198, '7962TA00', sec) # Moderate movement
