@@ -2,10 +2,10 @@ import os
 import subprocess
 import argparse
 
-# Change checkpoint here
-checkpoint_to_test = "C:/Users/u251245/CVEpilepsy_remote/4fold_results_cropped/fold_1/best_top1_acc_epoch_15.pth"
-
+# To run, use command python aidan_test.py ${path_to_your_checkpoint_file}
 # Example command: python aidan_test.py C:/Users/u251245/CVEpilepsy_remote/4fold_results_cropped/fold_1/best_top1_acc_epoch_15.pth
+# Should work out of the box if you change the base_path, data_path in lines 32 and 33 below
+
 
 def unix_to_windows_path(path):
     return path.replace('\\', '/')
