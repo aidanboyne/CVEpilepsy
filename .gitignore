@@ -1,13 +1,22 @@
+# Ignore All Videos
 videos/
 Video_GradCam/
 video_clips/
+Video_Cropped/
+video_clips_cropped/
+
+# Ignore Results
 diagnostic_save_path/
 4fold_diagnostics_img/
 4fold_diagnostics_text/
 diagnostics_TEST
 diagnostics_TRAIN
 diagnostics_TRAIN_Cropped
+
+# Ignore .pth files and logs
 checkpoints/TensorBoard
 checkpoints/train_all
 work_dirs/
+4fold_results_cropped/
 *.pth
+*.zip
