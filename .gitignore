@@ -12,6 +12,8 @@ diagnostic_save_path/
 diagnostics_TEST
 diagnostics_TRAIN
 diagnostics_TRAIN_Cropped
+4fold_results_img/
+4fold_results_text/
 
 # Ignore .pth files and logs
 checkpoints/TensorBoard

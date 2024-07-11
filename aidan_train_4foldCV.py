@@ -8,27 +8,27 @@ def unix_to_windows_path(path):
     return path.replace('\\', '/')
 
 def main(output_dir):
-    cv_dir = os.path.join(os.getcwd(), "annotations", "4fold_CV")
+    video_dir = os.path.join(os.getcwd(), "annotations", "video_test_annotations")
+    annotation_files = []
+    patients = []
+    for dirpath, dirnames, filenames in os.walk(video_dir):
+        for filename in filenames:
+            patients.append(filename.strip(".txt"))
+            annotation_files.append(unix_to_windows_path(os.path.join(dirpath, filename)))
     
-    for fold in range(1, 5):  # 4 folds
-        fold_dir = os.path.join(cv_dir, f"fold_{fold}")
-        fold_output_dir = os.path.join(output_dir, f"fold_{fold}")
-        os.makedirs(fold_output_dir, exist_ok=True)
-
-        train_ann = os.path.join(fold_dir, "train.txt")
-        val_ann = os.path.join(fold_dir, "val.txt")
-        test_ann = os.path.join(fold_dir, "test.txt")
+    for i, annotation in enumerate(annotation_files):
+        test_ann = annotation
+        fold_output_dir = os.path.join(output_dir, f'patient_{patients[i]}')
 
         # Create a temporary config file for this fold
-        temp_config = os.path.join(fold_output_dir, f"i3d_config_fold_{fold}.py")
+        temp_config = os.path.join(fold_output_dir, f"i3d_config_patient_{i}.py")
         
         with open(temp_config, 'w') as f:
             f.write(f"""
 base_path = "C:/Users/u251245/CVEpilepsy/src/mmaction2/configs/_base_/"
 data_path = "C:/Users/u251245/CVEpilepsy/video_clips_cropped/"
 model_path = "C:/Users/u251245/CVEpilepsy/i3d_gaussian/i3d_nl_embedded_gaussian_r50_32x2x1_100e_kinetics400_rgb_20200813-6e6aef1b.pth"
-checkpoint_path = f"C:/Users/u251245/CVEpilepsy/checkpoints/CV_fold{fold}"
-
+output_path = "{unix_to_windows_path(fold_output_dir)}"
 # Model Parameters
 eval_metrics = ['top_k_accuracy', 'aidan_acc', 'aidan_auc', 'modified_acc', 'modified_auc', 'save_diagnostics']
 
@@ -138,7 +138,7 @@ total_epochs = 15
 load_from = model_path
 # runtime settings
 checkpoint_config = dict(interval=5)
-work_dir = checkpoint_path
+work_dir = output_path
 
 gpu_ids = range(1)
             """)

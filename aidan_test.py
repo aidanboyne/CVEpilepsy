@@ -2,13 +2,15 @@ import os
 import subprocess
 import argparse
 
-#python tools/test.py C:/Users/u251245/CVEpilepsy/i3d_gaussian/i3d_config_00582992.py C:/Users/u251245/CVEpilepsy/checkpoints/train_all/00582992/best_top1_acc_epoch_1.pth --work-dir ./test_dir --dump ./test_dir/raw_output --show
+# Change checkpoint here
+checkpoint_to_test = "C:/Users/u251245/CVEpilepsy_remote/4fold_results_cropped/fold_1/best_top1_acc_epoch_15.pth"
 
+# Example command: python aidan_test.py C:/Users/u251245/CVEpilepsy_remote/4fold_results_cropped/fold_1/best_top1_acc_epoch_15.pth --out test_results_dir --eval save_diagnostics
 
 def unix_to_windows_path(path):
     return path.replace('\\', '/')
 
-def main(output_dir):
+def main(checkpoint_to_test=checkpoint_to_test, work_dir=os.path.join(os.getcwd(), "./work_dir_test"), output_dir=os.path.join(os.getcwd(), "./output_dir_test")):
     cv_dir = os.path.join(os.getcwd(), "annotations", "4fold_CV")
     
     for fold in range(1, 5):  # 4 folds
@@ -16,8 +18,6 @@ def main(output_dir):
         fold_output_dir = os.path.join(output_dir, f"fold_{fold}")
         os.makedirs(fold_output_dir, exist_ok=True)
 
-        train_ann = os.path.join(fold_dir, "train.txt")
-        val_ann = os.path.join(fold_dir, "val.txt")
         test_ann = os.path.join(fold_dir, "test.txt")
 
         # Create a temporary config file for this fold
@@ -25,10 +25,10 @@ def main(output_dir):
         
         with open(temp_config, 'w') as f:
             f.write(f"""
-base_path = "C:/Users/u251245/CVEpilepsy/src/mmaction2/configs/_base_/"
-data_path = "C:/Users/u251245/CVEpilepsy/video_clips/"
-model_path = "C:/Users/u251245/CVEpilepsy/i3d_gaussian/i3d_nl_embedded_gaussian_r50_32x2x1_100e_kinetics400_rgb_20200813-6e6aef1b.pth"
-checkpoint_path = f"C:/Users/u251245/CVEpilepsy/checkpoints/CV_fold{fold}"
+                    base_path = "C:/Users/u251245/CVEpilepsy/src/mmaction2/configs/_base_/"
+data_path = "C:/Users/u251245/CVEpilepsy/video_clips_cropped/"
+model_path = "{checkpoint_to_test}"
+checkpoint_path = "{output_dir}"
 
 # Model Parameters
 eval_metrics = ['top_k_accuracy', 'aidan_acc', 'aidan_auc', 'modified_acc', 'modified_auc', 'save_diagnostics']
@@ -57,42 +57,10 @@ data_root      = data_path
 data_root_val  = data_path
 data_root_test = data_path
 
-ann_file_train = "{unix_to_windows_path(train_ann)}"
-ann_file_val   = "{unix_to_windows_path(val_ann)}"
 ann_file_test  = "{unix_to_windows_path(test_ann)}"
-
 
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_bgr=False)
-train_pipeline = [
-    dict(type='DecordInit'),
-    dict(type='SampleFrames', clip_len=32, frame_interval=2, num_clips=1),
-    dict(type='DecordDecode'),
-    dict(type='Resize', scale=(-1, 256)),
-    dict(
-        type='MultiScaleCrop',
-        input_size=224,
-        scales=(1, 0.8),
-        random_crop=False,
-        max_wh_scale_gap=0),
-    dict(type='Resize', scale=(224, 224), keep_ratio=False),
-    dict(type='Flip', flip_ratio=0.5),
-    dict(type='Normalize', **img_norm_cfg),
-    dict(type='FormatShape', input_format='NCTHW'),
-    dict(type='Collect', keys=['imgs', 'label'], meta_keys=[]),
-    dict(type='ToTensor', keys=['imgs', 'label'])
-]
-val_pipeline = [
-    dict(type='DecordInit'),
-    dict(type='SampleFrames', clip_len=32, frame_interval=2, num_clips=1, test_mode = True),
-    dict(type='DecordDecode'),
-    dict(type='Resize', scale=(-1, 256)),
-    dict(type='CenterCrop', crop_size=224),
-    dict(type='Normalize', **img_norm_cfg),
-    dict(type='FormatShape', input_format='NCTHW'),
-    dict(type='Collect', keys=['imgs', 'label'], meta_keys=[]),
-    dict(type='ToTensor', keys=['imgs'])
-]
 test_pipeline = [
     dict(type='DecordInit'),
     dict(type='SampleFrames', clip_len=32, frame_interval=2, num_clips=1, test_mode = False),
@@ -103,27 +71,15 @@ test_pipeline = [
     dict(type='FormatShape', input_format='NCTHW'),
     dict(type='Collect', keys=['imgs', 'label'], meta_keys=[]),
     dict(type='ToTensor', keys=['imgs'])]
-
 data = dict(
-    videos_per_gpu=18,
+    videos_per_gpu=1,
     workers_per_gpu=1,
-    test_dataloader=dict(videos_per_gpu=1),
-    train=dict(
-        type=dataset_type,
-        ann_file=ann_file_train,
-        data_prefix=data_root,
-        pipeline=train_pipeline),
-    val=dict(
-        type=dataset_type,
-        ann_file=ann_file_val,
-        data_prefix=data_root_val,
-        pipeline=val_pipeline),
     test=dict(
         type=dataset_type,
-        ann_file=ann_file_test,
+        ann_file="{unix_to_windows_path(test_ann)}",
         data_prefix=data_root_test,
         pipeline=test_pipeline))
-    
+
 evaluation = dict(
     interval=1, metrics=eval_metrics)
 
@@ -144,21 +100,24 @@ work_dir = checkpoint_path
 gpu_ids = range(1)
             """)
 
-        # Train the model
-        command = f"python tools/train.py {temp_config} --validate --gpus 1 --work-dir {fold_output_dir}"
+        # Run the test
+        raw_output_file = os.path.join(fold_output_dir, "raw_output.txt")
+        command = f"python tools/test.py {temp_config} {checkpoint_to_test} --work-dir {work_dir} --out {raw_output_file}"
         
         try:
             subprocess.run(command, check=True, shell=True)
-            print(f"\nTraining succeeded for fold {fold}. Output saved to {fold_output_dir}\n")
+            print(f"\nTesting succeeded for fold {fold}. Output saved to {fold_output_dir}\n")
         except subprocess.CalledProcessError as e:
-            print(f"Training failed for fold {fold} with error: {e}")
+            print(f"Testing failed for fold {fold} with error: {e}")
             continue
 
-    print("\n\nTraining for all folds completed. Exiting...")
+    print("\n\nTesting for all folds completed. Exiting...")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Train MMAction2 models for 4-fold cross-validation.")
-    parser.add_argument('--output-dir', default='work_dirs', help='Directory where training outputs are saved')
+    parser = argparse.ArgumentParser(description="Test MMAction2 models for 4-fold cross-validation.")
+    parser.add_argument('checkpoint', help='Path to the checkpoint file')
+    parser.add_argument('--work-dir', default='./work_dirs', help='Directory where testing outputs are saved')
+    parser.add_argument('--output-dir', default='./test_output', help='Directory where raw outputs are saved')
     
     args = parser.parse_args()
-    main(args.output_dir)
+    main(args.config, args.checkpoint, args.work_dir, args.output_dir)
