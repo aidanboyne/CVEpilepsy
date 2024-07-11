@@ -25,7 +25,7 @@ def main(output_dir):
         with open(temp_config, 'w') as f:
             f.write(f"""
 base_path = "C:/Users/u251245/CVEpilepsy/src/mmaction2/configs/_base_/"
-data_path = "C:/Users/u251245/CVEpilepsy/video_clips/"
+data_path = "C:/Users/u251245/CVEpilepsy/video_clips_cropped/"
 model_path = "C:/Users/u251245/CVEpilepsy/i3d_gaussian/i3d_nl_embedded_gaussian_r50_32x2x1_100e_kinetics400_rgb_20200813-6e6aef1b.pth"
 checkpoint_path = f"C:/Users/u251245/CVEpilepsy/checkpoints/CV_fold{fold}"
 
