@@ -3,10 +3,11 @@ import subprocess
 import argparse
 
 # To run, use command python aidan_test.py ${path_to_your_checkpoint_file}
-# Example command: python aidan_test.py C:/Users/u251245/CVEpilepsy_remote/updated_metrics/fold_1/best_top1_acc_epoch_15.pth
-# Should work out of the box if you change the base_path, data_path in lines 32 and 33 below
+# Find the best checkpoint to use by running aidan_find_optimal_metrics.ipynb
+# Example command: python aidan_test.py C:/Users/u251245/CVEpilepsy/work_dirs/fold_3/best_top1_acc_epoch_15.pth
+# Should work out of the box if you change the checkpoint path below along with the base_path, data_path in lines 32 and 33 below
 
-checkpoint_to_test = "C:/Users/u251245/CVEpilepsy_remote/updated_metrics/fold_1/best_top1_acc_epoch_15.pth"
+checkpoint_to_test = "C:/Users/u251245/CVEpilepsy/work_dirs/fold_3/best_top1_acc_epoch_15.pth"
 
 def unix_to_windows_path(path):
     return path.replace('\\', '/')
@@ -31,7 +32,7 @@ def main(config, checkpoint_to_test, work_dir, output_dir):
         with open(temp_config, 'w') as f:
             f.write(f"""
 base_path = "C:/Users/u251245/CVEpilepsy/src/mmaction2/configs/_base_/"
-data_path = "C:/Users/u251245/CVEpilepsy/video_clips_cropped/"
+data_path = "C:/Users/u251245/CVEpilepsy/video_clips/"
 model_path = "{checkpoint_to_test}"
 checkpoint_path = "{unix_to_windows_path(output_dir)}"
 

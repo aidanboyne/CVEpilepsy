@@ -24,6 +24,7 @@ checkpoints/train_all
 updated_metrics/
 work_dirs/
 test_output_dir/
+test_results/
 4fold_results_cropped/
 *.pth
 *.zip
