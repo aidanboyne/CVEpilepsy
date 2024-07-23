@@ -2,6 +2,8 @@ import cv2
 import os
 import re
 
+# MAKE SURE PATH IS CORRECT IN LINE 93!
+
 def get_video_info(video_path):
     cap = cv2.VideoCapture(video_path)
     
