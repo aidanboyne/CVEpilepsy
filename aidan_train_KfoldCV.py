@@ -8,9 +8,9 @@ def unix_to_windows_path(path):
     return path.replace('\\', '/')
 
 def main(output_dir):
-    cv_dir = os.path.join(os.getcwd(), "annotations", "4fold_CV")
+    cv_dir = os.path.join(os.getcwd(), "annotations", "LOPO_CV")
     
-    for fold in range(1, 5):  # 4 folds
+    for fold in range(1, 26):  # 25 folds
         fold_dir = os.path.join(cv_dir, f"fold_{fold}")
         fold_output_dir = os.path.join(output_dir, f"fold_{fold}")
         os.makedirs(fold_output_dir, exist_ok=True)
@@ -156,7 +156,7 @@ gpu_ids = range(1)
     print("\n\nTraining for all folds completed. Exiting...")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Train MMAction2 models for 4-fold cross-validation.")
+    parser = argparse.ArgumentParser(description="Train MMAction2 models for k-fold cross-validation.")
     parser.add_argument('--output-dir', default='work_dirs', help='Directory where training outputs are saved')
     
     args = parser.parse_args()
