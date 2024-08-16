@@ -14,10 +14,10 @@ diagnostics_TRAIN
 diagnostics_TRAIN_Cropped
 4fold_results_img/
 4fold_results_text/
-test_results/
-
-# Ignore Annotations
-annotations/
+Test_results_cropped/
+Test_results_uncropped/
+final_results
+Test_LOPO
 
 # Ignore old stuff
 archived/
