@@ -32,9 +32,21 @@ Takes full videos and clips them into 3 second videos for training, testing, and
 
 This file is a bit buggy, so you have to rename the resulting clips (I reccomend using a mass find and replace in the file explorer using something like notepad++)
 
-### train_Kfold
+### video_information.py
 
-This file performs the following tasks:
+Gives information about each video (length, percent seizure) if a corresponding annotation file is available and the video has been clipped.
+
+### Kfold_CV.ipynb
+
+If all annotations have been saved to a master file, makes subfolders of annotations for train, validation, test in model cross validation.
+
+### train_KfoldCV.py
+
+Based on cross-validation directores created by `Kfold_CV.ipynb`, automatically creates the necessary configuration files for each cross validation fold, trains the model, and evaluates the fold performance.
+
+Models and raw log files are saved to a work directory. Performance evaluation is saved to the path specified in `src/mmaction2/mmaction/core/evaluation/accuracy.py`
+
+In detail, the script:
 1. Sets up the cross-validation directory structure.
 2. Iterates through 25 folds (1 to 25).
 3. For each fold:
@@ -69,19 +81,6 @@ The generated configuration file for each fold includes:
 Training Execution: The script uses `subprocess.run()` to execute the training command for each fold.
 It captures and prints any errors that occur during training.
 
-### video_information.py
-
-Gives information about each video (length, percent seizure) if a corresponding annotation file is available and the video has been clipped.
-
-### Kfold_CV.ipynb
-
-If all annotations have been saved to a master file, makes subfolders of annotations for train, validation, test in model cross validation.
-
-### train_KfoldCV.py
-
-Based on cross-validation directores created by `Kfold_CV.ipynb`, automatically creates the necessary configuration files for each cross validation fold, trains the model, and evaluates the fold performance.
-
-Models and raw log files are saved to a work directory. Performance evaluation is saved to the path specified in `src/mmaction2/mmaction/core/evaluation/accuracy.py`
 
 ### test.py
 
@@ -130,7 +129,7 @@ Notebook containing plotting and statistical analysis functions based primarily 
 
 ### find_optimal_models.ipynb
 
-After training, digs through all of the diagnostic files to find the best performing model (for use in testing) and outputs some breif stats concerning the training process.
+After training, digs through all of the diagnostic files to find the best performing model (for use in testing) and outputs some brief stats concerning the training process.
 
 
 
