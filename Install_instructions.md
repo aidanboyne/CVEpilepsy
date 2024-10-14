@@ -1,6 +1,6 @@
 # Environment setup
 
-Use miniconda as reccomended by the developers of mmaction. First, navigate to the mmaction2 folder from the files Anthony uploaded. Move the `requirements.txt` file to this folder. Then use the following commands to make the environment:
+Use miniconda as reccomended by the developers of mmaction. First, navigate to `src/mmaction2`. Move the `requirements.txt` file to this folder. Then use the following commands to make the environment:
 1. `conda create --name mmlab2 python=3.9`
 2. `conda activate mmlab2`
 3. `conda install pip`
@@ -10,7 +10,7 @@ Pip won't recognize the torch stuff as written in the requirements file, so you 
 
 `pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116`
 
-At this point, the actual mmaction package will not be recognized. Navigate to `src/mmaction2` in the console and run `pip intall -e .` to install the correct mmaction2 version from the local setup.py file.
+At this point, the actual mmaction package will not be recognized. Run `pip intall -e .` to install the correct mmaction2 version from the local setup.py file (again, ensure you are in `src/mmaction2`).
 
 Finally, run `pip install -r requirements.txt` one more time to make sure everything is installed and there are no dependency conflicts.
 
