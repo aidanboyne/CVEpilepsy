@@ -2,12 +2,14 @@
 #### Code used to produce results in **Three-Dimensional Convolutional Neural Network Based Detection of Epilectic Seizures from Video Data**
 _Aidan Boyne, Hsiang J. Yeh, Anthony K. Allam, Brandon M. Brown, Mohammad Tabaeizadeh, John M. Stern, R. James Cotton, Zulfi Haneef_
 
+Preprint: [medRxiv](https://www.medrxiv.org/content/10.1101/2024.10.11.24315247v1)
+Model weights: [Storage Bucket](https://bcmedu-my.sharepoint.com/:f:/g/personal/u251245_bcm_edu/EugwlExA3IdFnzNzwUcAPXsB9Lf2KUR4Q53ruaWDXIcj_A?e=2T47nW)
+
 For installation see _`Install.md`_
 
 ## How to use this repository
 
-Use of this repo requires a set of target videos and corresponding annotations for training. Pretrained models for each site listed in the study
-are also provided under the `models` folder.
+Use of this repo requires a set of target videos and corresponding annotations for training. Weights for models trained at the BCM and UCLA are also provided in the OneDrive bucket above.
 
 Clone the repository and install depenencies in `requirements.txt`. Then, run code in the files listed below in order.
 
@@ -15,12 +17,12 @@ Clone the repository and install depenencies in `requirements.txt`. Then, run co
 
 Run this first to create a readable file for the video clipping and clip annotations based on a main file with the manual annotations structured like:
 
-```java
+```python
 Patient # (number):
 ('Video/path.mp4', seizure_start_seconds, seizure_end_seconds, 'ID')
 ```
 For example:
-```java
+```python
 Patient 1 (06348578):
 ('Videos/7942GT00.mp4', 306, 365, '7942GT00', sec) # significant movement 
 ('Videos/7942GU00.mp4', 300, 362, '7942GU00', sec) # significant movement
