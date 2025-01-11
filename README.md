@@ -27,9 +27,10 @@ Patient # (number):
 For example:
 ```python
 Patient 1 (06348578):
-('Videos/7942GT00.mp4', 306, 365, '7942GT00', sec) # significant movement 
-('Videos/7942GU00.mp4', 300, 362, '7942GU00', sec) # significant movement
+('Videos/7942GT00.mp4', 306, 365, '7942GT00')
+('Videos/7942GU00.mp4', 300, 362, '7942GU00')
 ```
+_**Note**_: _The model is designed to classify videos in three second (90 frame) chunks. If your video is captured at a higher framerate, you can optionally downsample the video to 30fps._ 
 
 ### clips.ipynb
 
@@ -130,7 +131,7 @@ Specialized version of `test.py` to run testing by selecting the best model from
 
 ### full_video_statistics.ipynb
 
-Notebook containing plotting and statistical analysis functions for full
+Notebook containing a simplified plotting interface and updated analysis functions for full videos including detection latency, false alarm rates, and missed events.
 
 ### figures_stats.ipynb
 
