@@ -4,6 +4,7 @@ Video_GradCam/
 video_clips/
 Video_Cropped/
 video_clips_cropped/
+video_annotations/
 
 # Ignore Results
 diagnostic_save_path/
@@ -15,6 +16,12 @@ diagnostics_TRAIN_Cropped
 4fold_results_img/
 4fold_results_text/
 test_results/
+model_data\
+All_Results.xlsx
+UCLA_video_timing_info.txt
+
+# Ignore Figures
+figures/
 
 # Ignore Annotations
 annotations/

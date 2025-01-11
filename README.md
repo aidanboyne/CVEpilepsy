@@ -2,6 +2,8 @@
 #### Code used to produce results in **Three-Dimensional Convolutional Neural Network Based Detection of Epilectic Seizures from Video Data**
 _Aidan Boyne, Hsiang J. Yeh, Anthony K. Allam, Brandon M. Brown, Mohammad Tabaeizadeh, John M. Stern, R. James Cotton, Zulfi Haneef_
 
+![Example Results](Demo_results.png)
+
 Preprint: [medRxiv](https://www.medrxiv.org/content/10.1101/2024.10.11.24315247v1)
 
 Model weights: [Storage Bucket](https://bcmedu-my.sharepoint.com/:f:/g/personal/u251245_bcm_edu/EugwlExA3IdFnzNzwUcAPXsB9Lf2KUR4Q53ruaWDXIcj_A?e=2T47nW)
@@ -125,6 +127,10 @@ It accepts the following arguments:
 ### test_LOPO.py
 
 Specialized version of `test.py` to run testing by selecting the best model from training for each patient for proper cross-validation testing in leave-one-patient-out cross-validation schemes.
+
+### full_video_statistics.ipynb
+
+Notebook containing plotting and statistical analysis functions for full
 
 ### figures_stats.ipynb
 
